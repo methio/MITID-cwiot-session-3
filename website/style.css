@@ -1,0 +1,129 @@
+:root {
+    /** Base colors */
+--clr-dark-a0: #000000;
+--clr-light-a0: #ffffff;
+
+/** Theme primary colors */
+--clr-primary-a0: #dddb1c;
+--clr-primary-a10: #e3df44;
+--clr-primary-a20: #e8e360;
+--clr-primary-a30: #ece779;
+--clr-primary-a40: #f1eb90;
+--clr-primary-a50: #f5efa7;
+
+/** Theme surface colors */
+--clr-surface-a0: #2b343f;
+--clr-surface-a10: #3f4852;
+--clr-surface-a20: #555c65;
+--clr-surface-a30: #6b717a;
+--clr-surface-a40: #82878f;
+--clr-surface-a50: #9a9ea4;
+
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--clr-light-a0);
+    background-color: var(--clr-surface-a0);
+    font-family: "Inter", sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0em;
+}
+h3 {
+    margin-top: 0em;
+}
+/* p {
+    margin: auto;
+} */
+.section {
+
+    width: 50%;
+
+    padding: 2em;
+    margin: 2em 0em;
+
+    background-color: var(--clr-surface-a10);
+    border-radius: .5em;
+}
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-content .column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alwan {
+    border-radius: .2em;
+}
+
+#color-display {
+    flex-grow: 2;
+
+    padding: 1em;
+    border-radius: .2em .2em 0em 0em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-color: #72ba72;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0em;
+    border-radius: 0em 0em .2em .2em;
+    background-color: var(--clr-primary-a0);
+    color: var(--clr-dark-a0);
+    border-top: solid 4px var(--clr-primary-a20);
+
+    margin:0;
+}
+
+/* ### Light sensor - second section ### */
+#bottom .section-content {
+    height: 10em;
+}
+
+#light-illu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#illu-container {
+    flex-grow: 2;
+    width: 15%;
+    background-color: var(--clr-surface-a20);
+
+    border-radius: .2em;
+
+    border: solid 2px var(--clr-surface-a30);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#illu-indicator {
+    width: 100%;
+    border-top: solid 5px var(--clr-primary-a0);
+    background-color: var(--clr-primary-a40);
+    border-radius: .1em;
+
+    height: 10%;
+    transition: height 1s;
+}

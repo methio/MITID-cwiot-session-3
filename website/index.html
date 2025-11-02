@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>cwiot session 3</title>
+
+    <!-- ################################   styles  ################################ -->     
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- lucide icons are loaded at the bottom of body tag -->
+
+    <!-- ########################   scripts and ressources  ######################## -->
+    <!-- Adafruit IO custom library -->
+    <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
+    <!-- alwan color picker -->
+    <script src="https://cdn.jsdelivr.net/npm/alwan@2/dist/js/alwan.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alwan@2/dist/css/alwan.min.css"/>
+    <!-- script custom -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="top" class="section">
+        <h2><i data-lucide="pipette"></i> Pick a color</h2>
+        
+        <div class="section-content">
+            <div class="column" id="color-picker"></div>
+        
+            <div class="column">
+                <div id="color-display">
+                    <h2 id="color-h2">#72ba72</h2>
+                </div>
+
+                <p class="button" id="button-color">Send the color</p>
+            </div>
+        </div>        
+    </div>
+
+    <div id="bottom" class="section">
+        <h2><i data-lucide="sun"></i> Light sensor</h2>
+
+        <div class="section-content">
+            <div class="column" id="light-illu">
+                <div id="illu-container">
+                    <div id="illu-indicator"></div>
+                </div>
+            </div>
+
+            <div class="column">
+                <h3>Current luminosity</h3>
+                <p><span id="light-value-display">1034</span> lumens</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>    
+</body>
+</html>
